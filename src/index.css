@@ -1,0 +1,35 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 40px;
+
+  color-scheme: light dark;
+  color:#fda5f7;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  color:#242424;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: .8em;
+  line-height: .8em;
+  padding: 3px 6px 5px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fda5f7;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #e671e0;
+}
+button:disabled {
+  opacity: 0.4;
+}
