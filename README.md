@@ -16,7 +16,7 @@ Supports setting min/max values, input validation, and displays error messages.
 - TypeScript
 - CSS modules / basic styling
 
-- ## Logic
+## Logic
 - Local component state is used in the `SetCounter` component for user input.
 - Redux slice stores the finalized counter state and validation flags (`isSetMode` and `error`).
 - Error messages are displayed for invalid input, and the "Set" button is disabled until corrected.
