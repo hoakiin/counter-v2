@@ -19,7 +19,7 @@ export const Counter = () => {
 
   return (
     <div className="counter">
-      <Display count={count} maxValue={maxValue} />
+      <Display/>
       <div className="buttonsWrapper">
         <Button
           title={"+"}

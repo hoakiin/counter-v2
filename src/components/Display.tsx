@@ -1,11 +1,21 @@
 import "../app/App.css";
+import { useAppSelector } from "../hooks/useAppSelector";
+import { selectCount, selectError, selectIsSetMode, selectMaxValue } from "../model/counter-slice";
 
-type DisplayPropsType = {
-  count: number;
-  maxValue: number;
-};
+export const Display = () => {
+  const error = useAppSelector(selectError);
+  const count = useAppSelector(selectCount);
+  const maxValue = useAppSelector(selectMaxValue);
+  const isSetMode = useAppSelector(selectIsSetMode)
 
-export const Display = ({ count, maxValue }: DisplayPropsType) => {
+  if (error) {
+    return <div className="display error">Incorrect value!</div>;
+  }
+
+  if (isSetMode) {
+    return <div className="display setMode">set values and press "set"</div>;
+  }
+
   return (
     <div className={count === maxValue ? "display red" : "display"}>
       {count}
